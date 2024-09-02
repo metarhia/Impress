@@ -23,7 +23,7 @@ metatests.testAsync('lib/bus', async (test) => {
   test.strictSame(typeof bus.application, 'object');
   test.strictSame(bus.tree, {});
   await bus.load();
-  test.strictSame(Object.keys(bus.tree), ['math', 'worldTime']);
+  test.strictSame(Object.keys(bus.tree), ['fakerapi', 'math', 'worldTime']);
   test.strictSame(bus.tree.math.parent, bus.tree);
   test.strictSame(typeof bus.tree.math, 'object');
   test.strictSame(typeof bus.tree.math.eval, 'function');
